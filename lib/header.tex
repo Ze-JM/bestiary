@@ -1,0 +1,66 @@
+
+
+
+\renewcommand{\headrulewidth}{0pt}
+
+%-----------------------------------------------------------------
+% DATE DE DERNIÈRE MODIFICATION
+\newcommand{\dateAjd}
+
+
+
+%-----------------------------------------------------------------
+% Command reference ----------------------------------------------
+%-----------------------------------------------------------------
+\newcommand{\fullx}{11}
+\newcommand{\fully}{15}
+
+\pagestyle{fancy}
+
+%-----------------------------------------------------------------
+% Color reference ------------------------------------------------
+%-----------------------------------------------------------------
+\newcommand{\Color}{black!50!red!100} %color of the special text parts
+\newcommand{\LighterColor}{white!0}
+
+%\pagecolor{black!5}
+
+\newcommand{\vide}{}
+
+
+%-----------------------------------------------------------------
+%-----------------------------------------------------------------
+% MODIFIER STYLE PAGINATION
+\fancyhead{}
+\lfoot{\hyperlink{toc}{\Large{$\Omega$}}}
+%-----------------------------------------------------------------
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt plus 0pt minus 1pt}
+\renewcommand{\baselinestretch}{1.0}
+\setcounter{secnumdepth}{0}
+\raggedbottom
+
+
+%-----------------------------------------------------------------
+% INFORMATION SUR LES AUTEURS ET LE DOCUMENT
+\author{Lead Designer Jean-Michel Duguay}
+\title{\textbf{\game} \\ \BookName}
+
+
+% TABLE DES MATIÈRES
+% OPTIONS TABLES DES MATIÈRES
+% PLACER DES ANCRES DANS LE TEXTE
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=\Color,  %choose some color if you want links to stand out
+}
+
+
+%-----------------------------------------------------------------
+
+% First letter font
+%\renewcommand{\LettrineFont}{\initfamily\color{\Color}}
+%\newcommand{\CCap}[2]{\lettrine{#1}{#2}}
+\newcommand{\CCap}[2]{{#1}{#2}}

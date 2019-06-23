@@ -1,0 +1,250 @@
+\documentclass[letterpaper,10pt,twoside,twocolumn,openany]{book}
+
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
+\usepackage{hang}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{JMpreamble}
+\usepackage[toc,page]{appendix}
+
+\setcounter{tocdepth}{1}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+}
+
+\author{Jean-Michel Duguay}
+
+\title{Bestiary Remastered}
+
+% Start document
+\begin{document}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\section{Assumptions}
+
+\part{Monsters}
+
+\newcommand{\MonsterUpper}[9]{
+\textbf{Armor Class} #1\\
+\textbf{Hit Points} #2\\
+\textbf{Speed} #3
+\tcbline
+\begin{center}
+
+\begin{tabular}{c c c c c c}
+\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA} \\
+#4 & #5 & #6 & #7 & #8 & #9
+
+\end{tabular}
+\tcbline
+\end{center}
+}
+
+
+\newcommand{\Statblock}[5]{\begin{tcolorbox}[title={{\LARGE\textbf{#1}}\\ % 1 is Monster Name
+\small\textit{#2}}, % 2 size, type and alignment
+colframe=\Color , 
+colback=\LighterColor, 
+float,
+arc=0mm,
+segmentation style={solid, \Color},
+boxrule = 0mm,
+]
+\MonsterUpper{1}{2}{3}{4}{5}{6}{7}{8}{9} 
+#3 % 3 is Monster upper
+\tcbline 
+#4 % 4 in Monster middle
+\tcbline
+#5
+\end{tcolorbox}}
+
+
+\Statblock{1}{2}{3}{4}{5}
+
+\section{}
+
+* Aberration Building
+	* Grell
+	* Hook Horror
+	* Intellect Devourer
+	* Otyugh
+	* Roper and others like it
+* Angels %%%
+* Azer % Variety
+* Basilisk % 4e mod
+* Beastman % New
+	* Quaggoth
+	* Kenku
+* Blights %%%
+* Cambion %%%
+* Cockatrice % reversed Coualt
+* Coualt % less spelly
+* Crawling-Claw %%%
+* Deah-Knight % less spelly
+* BBEG Fiend Building % Infernal Magic, Devil and demons as one
+	* Balor %%%
+	* Marilith %%%
+	* Quasit % familiars
+	* Rakshasa % looks good
+	* Shadow  
+	* Fear 
+	* Hunger
+	* Rage
+	* Opportunity
+	* Demon
+	* Succubus
+	* Yugoloth
+	* Slaad
+* Fiend Minions % Variety 
+	* Imp % familiars
+	* Merrow
+* Displace-Beast % Encounter building + Variety
+* Dragon add-up
+* Dryad %%% Elven Magic
+* Elves % Variety + magic
+
+* Faerie Dragon Ancient %%%
+* Fomorian % 4e mod
+* Fungi%%%
+	*Myconid 
+* Gargoyle %%%
+* Giant add-ups 
+	* Cyclops 
+	* Ettin 
+	* Giant
+	* Ogres
+	* Oni % looks good
+	* Trolls
+* Gnolls % 4e mod
+* Gnomes % Variety
+* Goblinoids
+	* Bugbears 
+	* Goblins % 4e mod + Magic
+	* Hobgoblins % Variety
+* Griffon %%%
+* Hags Add-up
+* Harpy % 4e mod
+* Hell-Hound % Wheel of TIme mod
+* Hippogriff %%%
+* Hydra %%%
+* Lizardfolk %%% Magic
+* Manticore %%% poison stings
+* Medusa % 4e mod
+* Merfolk % Sirens
+* Minotaur % Variety
+* Naga % less spelly
+* Orcs % Variety
+* Pegasus %%%
+* Pixie % less spelly
+* Pseudodragon % looks good % familiars
+* Roc %%%
+* Satyr %%%
+* Spectre %%%
+* Sprite % familiars
+* Tarrasque % 4e mod
+* Treat %%%
+* Troglodyte % Variety
+* Undead
+	* Mastermind Add-up
+		* Demi Lich
+		* Lich
+		* Mummies % look good
+	* Minions
+		* Ghouls % Tome check
+	* Lieutenant / Brute Add-up %%%
+		* Banshee
+		* Ghost
+		* Revenant
+		* Shadow
+		* Spectre
+		* Wight
+		* Wraith
+	* Mindless Add-up
+		* Skeletons
+		* Zombie
+* Vampires Add-up
+* Wight %%%
+* Wraith % 4e mod
+
+
+
+
+* Magical creation
+	* Animated-Objects
+	* Elemental
+		* Galeb Duhr
+		* Magmin
+		* Mephit
+		* Salamander
+	* Gibbering Mouther
+	* Golems
+		* Clay Golem
+		* Flesh Golem
+		* Iron Golem
+		* Stone Golem
+	* Gorgon
+	* Helmed Horror
+	* Homunculus % familiars
+	* Invisible Stalker
+	* Modrons
+	* Shield Guardian
+
+	
+	
+\part{Encounters}
+
+* Centaur % variety
+* Chimera % encounter building
+* Bulette % encounter building
+* Lycantropes %%% Variety + Encoounters
+* Owlbear %%% Encounter
+* Purple Worm % Encounter
+* Remorak % Encounter
+	
+
+* Gibbering Mouther 
+
+
+Celestials
+Fiends
+Undead
+	Ghosts
+	Corpses
+
+\end{document}             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
